@@ -20,6 +20,7 @@ module.exports = async (req, res) => {
   try {
     await transporter.verify();
   } catch (error) {
+    console.error("Transporter verify error:", error);
     res.status(500).json({ error: 'Email server not ready', details: error.toString() });
     return;
   }
@@ -38,6 +39,7 @@ module.exports = async (req, res) => {
     await transporter.sendMail(mail);
     res.status(200).json({ code: 200, status: "Message Sent" });
   } catch (error) {
+    console.error("SendMail error:", error);
     res.status(500).json({ error: error.toString() });
   }
 };

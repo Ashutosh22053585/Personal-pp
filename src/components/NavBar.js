@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 
-import { FaMoon, FaSun, FaGithub } from 'react-icons/fa';
+import { FaMoon, FaSun, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const NavBar = ({ theme, toggleTheme }) => {
 
@@ -57,6 +57,9 @@ export const NavBar = ({ theme, toggleTheme }) => {
                 <a href="https://www.instagram.com/ashuu_omm?igsh=MW83YW5hYnJoMjVsNQ%3D%3D&utm_source=qr"><img src={navIcon3} alt="" /></a>
                 <a href="https://github.com/Ashutosh22053585" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '8px', color: '#fff', fontSize: '22px', verticalAlign: 'middle' }} title="GitHub">
                   <FaGithub />
+                </a>
+                <a href="https://www.linkedin.com/in/ashutosh-om-pattanaik-557973261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '8px', color: '#fff', fontSize: '22px', verticalAlign: 'middle' }} title="LinkedIn">
+                  <FaLinkedin />
                 </a>
               </div>
               <button onClick={toggleTheme} style={{ background: 'none', border: 'none', marginLeft: 18, fontSize: 22, color: '#fff', cursor: 'pointer' }} title="Toggle dark mode">

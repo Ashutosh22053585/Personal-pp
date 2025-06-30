@@ -102,6 +102,21 @@ p.success {
 p.danger {
 	color: red;
 }
+
+@media (max-width: 768px) {
+  .navbar-text .vvd {
+    padding: 8px 16px !important;
+    font-size: 15px !important;
+    margin-left: 0 !important;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .navbar-text {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;

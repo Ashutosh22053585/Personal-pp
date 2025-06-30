@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 
-// Debug: Log environment variables
+// Debug: Log all environment variables
+console.log("ALL ENV VARS:", process.env);
 console.log("EMAIL_USER:", process.env.EMAIL_USER);
 console.log("EMAIL_PASS exists:", !!process.env.EMAIL_PASS);
 

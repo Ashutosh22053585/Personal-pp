@@ -52,9 +52,7 @@ export const NavBar = ({ theme, toggleTheme }) => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/ashuu_omm?igsh=MW83YW5hYnJoMjVsNQ%3D%3D&utm_source=qr"><img src={navIcon3} alt="" /></a>
+                                <a href="https://www.instagram.com/ashuu_omm?igsh=MW83YW5hYnJoMjVsNQ%3D%3D&utm_source=qr"><img src={navIcon3} alt="" /></a>
                 <a href="https://github.com/Ashutosh22053585" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '8px', color: '#fff', fontSize: '22px', verticalAlign: 'middle' }} title="GitHub">
                   <FaGithub />
                 </a>

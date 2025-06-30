@@ -1,3 +1,23 @@
+:root {
+  --color-bg: #fff;
+  --color-text: #222;
+  --color-primary: #4e54c8;
+  --color-secondary: #8f94fb;
+  --color-card: #fff;
+  --color-card-border: #e0e7ff;
+  --color-card-shadow: rgba(78, 84, 200, 0.10);
+}
+
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-text: #fff;
+  --color-primary: #8f94fb;
+  --color-secondary: #4e54c8;
+  --color-card: #23263a;
+  --color-card-border: #4e54c8;
+  --color-card-shadow: rgba(78, 84, 200, 0.22);
+}
+
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
@@ -31,9 +51,10 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: var(--color-bg) !important;
+  color: var(--color-text) !important;
   font-family: 'Centra', sans-serif !important;
+  transition: background 0.3s, color 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6 {

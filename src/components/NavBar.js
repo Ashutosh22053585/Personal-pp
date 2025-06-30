@@ -9,7 +9,9 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 
-export const NavBar = () => {
+import { FaMoon, FaSun } from 'react-icons/fa';
+
+export const NavBar = ({ theme, toggleTheme }) => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -54,6 +56,30 @@ export const NavBar = () => {
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/ashuu_omm?igsh=MW83YW5hYnJoMjVsNQ%3D%3D&utm_source=qr"><img src={navIcon3} alt="" /></a>
               </div>
+              <button onClick={toggleTheme} style={{ background: 'none', border: 'none', marginLeft: 18, fontSize: 22, color: '#fff', cursor: 'pointer' }} title="Toggle dark mode">
+                {theme === 'dark' ? <FaSun /> : <FaMoon />}
+              </button>
+              <a
+                href="https://drive.google.com/file/d/1PHIVJgm-HobpE0SYcT5SJMnmTHVCVnku/view?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume-btn"
+                style={{
+                  marginLeft: 12,
+                  padding: '6px 14px',
+                  borderRadius: 22,
+                  background: 'linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%)',
+                  color: '#fff',
+                  fontWeight: 500,
+                  fontSize: 14,
+                  border: 'none',
+                  textDecoration: 'none',
+                  display: 'inline-block',
+                  transition: 'background 0.2s',
+                }}
+              >
+                Download Resume
+              </a>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
